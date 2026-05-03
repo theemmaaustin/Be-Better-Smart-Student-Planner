@@ -14,6 +14,7 @@ public class Main {
 
         GoalTracker goalTracker = new GoalTracker();
         HomeworkTracker homeworkTracker = new HomeworkTracker();
+        BudgetTracker budgetTracker = new BudgetTracker();
 
         while (true) {
 
@@ -31,14 +32,13 @@ public class Main {
                     homeworkTracker.homeworkMenu(scanner);
                     break;
                 case "3":
-                    System.out.println("\n[Budget Tracker coming soon]\n");
+                    budgetTracker.budgetMenu(scanner);
                     break;
                 case "4":
                     System.out.println("\n[GPA Calculator coming soon]\n");
                     break;
                 case "5":
                     System.out.println("Goodbye! Keep being better.");
-                    scanner.close(); 
                     return;         
                 default:
                     System.out.println("Invalid choice. Please enter a number from 1 to 5.\n");
