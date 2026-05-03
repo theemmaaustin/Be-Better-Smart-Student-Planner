@@ -12,6 +12,8 @@ public class Main {
         UserProfile profile = new UserProfile();
         profile.startMenu(scanner);
 
+        GoalTracker goalTracker = new GoalTracker();
+
         while (true) {
 
             // Show the menu options
@@ -22,7 +24,7 @@ public class Main {
             // Route the user to the correct feature based on their input
             switch (choice) {
                 case "1":
-                    System.out.println("\n[Goal Tracker coming soon]\n");
+                    goalTracker.goalMenu(scanner);
                     break;
                 case "2":
                     System.out.println("\n[Homework Tracker coming soon]\n");
