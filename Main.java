@@ -15,6 +15,7 @@ public class Main {
         GoalTracker goalTracker = new GoalTracker();
         HomeworkTracker homeworkTracker = new HomeworkTracker();
         BudgetTracker budgetTracker = new BudgetTracker();
+        GpaCalculator gpaCalculator = new GpaCalculator();
 
         while (true) {
 
@@ -35,7 +36,7 @@ public class Main {
                     budgetTracker.budgetMenu(scanner);
                     break;
                 case "4":
-                    System.out.println("\n[GPA Calculator coming soon]\n");
+                    gpaCalculator.calculateGpa(scanner);
                     break;
                 case "5":
                     System.out.println("Goodbye! Keep being better.");
