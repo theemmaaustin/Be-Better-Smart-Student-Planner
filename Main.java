@@ -13,6 +13,7 @@ public class Main {
         profile.startMenu(scanner);
 
         GoalTracker goalTracker = new GoalTracker();
+        HomeworkTracker homeworkTracker = new HomeworkTracker();
 
         while (true) {
 
@@ -27,7 +28,7 @@ public class Main {
                     goalTracker.goalMenu(scanner);
                     break;
                 case "2":
-                    System.out.println("\n[Homework Tracker coming soon]\n");
+                    homeworkTracker.homeworkMenu(scanner);
                     break;
                 case "3":
                     System.out.println("\n[Budget Tracker coming soon]\n");
