@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
-        printWelcomeBanner();
+        UserProfile profile = new UserProfile();
+        profile.startMenu(scanner);
 
         while (true) {
 
